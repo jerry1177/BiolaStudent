@@ -40,5 +40,5 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:17.0.0'
 }
 
- // Google Play services Gradle plugin
+// Google Play services Gradle plugin
 apply plugin: 'com.google.gms.google-services'
