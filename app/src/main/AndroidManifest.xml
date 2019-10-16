@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Directory">
+        <activity android:name=".Directory"
             android:parentActivityName=".MainActivity">
         </activity>
-        <activity android:name=".Presence" >
+        <activity android:name=".Presence"
             android:parentActivityName=".MainActivity">
         </activity>
-        <activity android:name=".MyAccount">
+        <activity android:name=".MyAccount"
             android:parentActivityName=".MainActivity">
         </activity>
         <activity android:name=".MainActivity">
