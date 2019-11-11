@@ -103,4 +103,19 @@ public class MainActivity extends AppCompatActivity {
         FirebaseAuth.getInstance().signOut();
     }
 
+    public void goToMyAccount (View view){
+        Intent intent = new Intent (this, MyAccount.class);
+        startActivity(intent);
+    }
+
+    public void goToPresence (View view){
+        Intent intent = new Intent (this, Presence.class);
+        startActivity(intent);
+    }
+
+    public void goToDirectory (View view){
+        Intent intent = new Intent (this, Directory.class);
+        startActivity(intent);
+    }
+
 }
