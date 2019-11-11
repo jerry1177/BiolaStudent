@@ -1,6 +1,5 @@
 package com.example.student;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -29,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
+        /*
         TextView myView = findViewById(R.id.textView);
         String student = BuildConfig.ApiKey;
         myView.setText(student);
@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        */
+
     }
 
 
