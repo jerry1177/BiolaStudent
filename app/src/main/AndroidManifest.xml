@@ -9,16 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".none_activity"
-            android:parentActivityName=".AuthenticatedHome">
+        <activity android:name=".Login"
+            android:parentActivityName=".MainActivity">
+
         </activity>
-        <activity android:name=".Presence"
-            android:parentActivityName=".AuthenticatedHome">
+
+        <activity android:name=".AuthenticatedHome"
+            android:parentActivityName=".Login">
         </activity>
-        <activity android:name=".MainActivity"
-            android:parentActivityName=".AuthenticatedHome">
+        <activity android:name=".Presence">
         </activity>
-        <activity android:name=".AuthenticatedHome">
+
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

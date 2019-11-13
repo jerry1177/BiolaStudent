@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -22,6 +23,8 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "GoogleActivity";
     private static final int RC_SIGN_IN = 9001;
+
+    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
     // [START declare_auth]
     private FirebaseAuth mAuth;
@@ -83,12 +86,8 @@ public class MainActivity extends AppCompatActivity {
             toast.show();
         // if login button was clicked
         } else {
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    "Login",
-                    Toast.LENGTH_SHORT);
-
-            toast.show();
-
+            Intent intent = new Intent(this, Login.class);
+            startActivity(intent);
         }
 
     }
