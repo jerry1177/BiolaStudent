@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Authenticated_Home">
+    tools:context=".none_activity">
 
     <TextView
         android:id="@+id/textView3"
