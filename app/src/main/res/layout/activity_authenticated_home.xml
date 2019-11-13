@@ -12,7 +12,7 @@
         android:layout_height="40dp"
         android:background="#000000"
         android:fontFamily="@font/rubik_light"
-        android:text="All As One"
+        android:text="@string/main_text"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="32sp"
@@ -28,7 +28,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lim_50" />
+        app:srcCompat="@drawable/lim_50"
+        android:contentDescription="@string/lim_center" />
 
     <TableLayout
         android:layout_width="409dp"
@@ -52,7 +53,7 @@
                 android:fontFamily="@font/rubik_light"
                 android:onClick="linkPressed"
                 android:tag="1"
-                android:text="Map"
+                android:text="@string/map"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -65,7 +66,7 @@
                 android:fontFamily="@font/rubik_light"
                 android:onClick="linkPressed"
                 android:tag="2"
-                android:text="Cafeteria"
+                android:text="@string/cafeteria"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -84,7 +85,7 @@
                 android:fontFamily="@font/rubik_light"
                 android:onClick="linkPressed"
                 android:tag="3"
-                android:text="My Account"
+                android:text="@string/my_account"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -97,7 +98,7 @@
                 android:fontFamily="@font/rubik_light"
                 android:onClick="linkPressed"
                 android:tag="4"
-                android:text="Presence"
+                android:text="@string/presence"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -116,7 +117,7 @@
                 android:fontFamily="@font/rubik_light"
                 android:onClick="linkPressed"
                 android:tag="5"
-                android:text="Directory"
+                android:text="@string/directory"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -129,7 +130,7 @@
                 android:fontFamily="@font/rubik_light"
                 android:onClick="linkPressed"
                 android:tag="6"
-                android:text="Canvas"
+                android:text="@string/canvas"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -145,7 +146,7 @@
         android:layout_marginStart="2dp"
         android:background="#00FFFFFF"
         android:onClick="signOut"
-        android:text="sign out"
+        android:text="@string/sign_out"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
