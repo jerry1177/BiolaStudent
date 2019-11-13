@@ -11,6 +11,7 @@
         android:layout_width="411dp"
         android:layout_height="40dp"
         android:background="#000000"
+        android:fontFamily="@font/rubik_light"
         android:text="All As One"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -48,20 +49,26 @@
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:backgroundTint="#FFC50725"
+                android:fontFamily="@font/rubik_light"
                 android:onClick="linkPressed"
                 android:tag="1"
                 android:text="Map"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/cafeteria"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:backgroundTint="#FFC50725"
+                android:fontFamily="@font/rubik_light"
                 android:onClick="linkPressed"
                 android:tag="2"
                 android:text="Cafeteria"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </TableRow>
 
         <TableRow
@@ -74,20 +81,26 @@
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:backgroundTint="#FFC50725"
+                android:fontFamily="@font/rubik_light"
                 android:onClick="linkPressed"
                 android:tag="3"
                 android:text="My Account"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/presence"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:backgroundTint="#FFC50725"
+                android:fontFamily="@font/rubik_light"
                 android:onClick="linkPressed"
                 android:tag="4"
                 android:text="Presence"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </TableRow>
 
         <TableRow
@@ -100,22 +113,40 @@
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:backgroundTint="#FFC50725"
+                android:fontFamily="@font/rubik_light"
                 android:onClick="linkPressed"
                 android:tag="5"
                 android:text="Directory"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/canvas"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:backgroundTint="#FFC50725"
+                android:fontFamily="@font/rubik_light"
                 android:onClick="linkPressed"
                 android:tag="6"
                 android:text="Canvas"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </TableRow>
 
 
     </TableLayout>
+
+    <Button
+        android:id="@+id/signOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:background="#00FFFFFF"
+        android:onClick="signOut"
+        android:text="sign out"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

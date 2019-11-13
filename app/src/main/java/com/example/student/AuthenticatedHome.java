@@ -55,4 +55,8 @@ public class AuthenticatedHome extends AppCompatActivity {
 
         }
     }
+
+    public void signOut(View view) {
+        finish();
+    }
 }
