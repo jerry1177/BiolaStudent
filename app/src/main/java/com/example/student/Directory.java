@@ -9,6 +9,6 @@ public class Directory extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_authenticatedhome);
+        setContentView(R.layout.activity_authenticated_home);
     }
 }

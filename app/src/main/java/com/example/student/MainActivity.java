@@ -3,15 +3,18 @@ package com.example.student;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Display;
 import android.view.View;
-import android.widget.TextView;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.Toast;
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,6 +32,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        // set image view height and width  dynamiclly
+        ImageView image = (ImageView) findViewById(R.id.imageView);
+        image.getLayoutParams().width = ViewGroup.LayoutParams.MATCH_PARENT;
+        Display window = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        window.getSize(size);
+        int height = size.y;
+        height /= 3;
+        image.getLayoutParams().height = height;
+
+        //image.setLayoutParams
+        //        (new ViewGroup.MarginLayoutParams
+        //                (100, ViewGroup.LayoutParams.MATCH_PARENT));
         /*
         TextView myView = findViewById(R.id.textView);
         String student = BuildConfig.ApiKey;
@@ -49,6 +66,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         */
+
+    }
+
+    public void buttonPressed(View view) {
+        // if map was clicked
+        if (Integer.parseInt(view.getTag().toString()) == 1) {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Map",
+                    Toast.LENGTH_SHORT);
+
+            toast.show();
+        // if cafeteria was clicked
+        } else if (Integer.parseInt(view.getTag().toString()) == 2) {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Cafeteria",
+                    Toast.LENGTH_SHORT);
+
+            toast.show();
+        // if login button was clicked
+        } else {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Login",
+                    Toast.LENGTH_SHORT);
+
+            toast.show();
+
+        }
 
     }
 
@@ -104,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToMyAccount (View view){
-        Intent intent = new Intent (this, MyAccount.class);
+        Intent intent = new Intent (this, Authenticated_Home.class);
         startActivity(intent);
     }
 

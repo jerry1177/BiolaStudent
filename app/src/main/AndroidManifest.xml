@@ -15,7 +15,7 @@
         <activity android:name=".Presence"
             android:parentActivityName=".MainActivity">
         </activity>
-        <activity android:name=".MyAccount"
+        <activity android:name=".Authenticated_Home"
             android:parentActivityName=".MainActivity">
         </activity>
         <activity android:name=".MainActivity">
