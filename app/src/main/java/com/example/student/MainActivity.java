@@ -1,8 +1,14 @@
 package com.example.student;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,10 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "GoogleActivity";
     private static final int RC_SIGN_IN = 9001;
 
-    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
-
-    public static boolean signOut = false;
-    public static boolean signedIn = false;
+    private static final int MY_PERMISSION_REQUEST_INTERNET = 0;
 
     // [START declare_auth]
     private FirebaseAuth mAuth;
@@ -49,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         height /= 3;
         image.getLayoutParams().height = height;
 
-        //image.setLayoutParams
         //        (new ViewGroup.MarginLayoutParams
         //                (100, ViewGroup.LayoutParams.MATCH_PARENT));
         /*
@@ -76,27 +78,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonPressed(View view) {
-        // if map was clicked
-        if (Integer.parseInt(view.getTag().toString()) == 1) {
-            Toast.makeText(getApplicationContext(),"Map", Toast.LENGTH_SHORT).show();
-
-        // if cafeteria was clicked
-        } else if (Integer.parseInt(view.getTag().toString()) == 2) {
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    "Cafeteria",
-                    Toast.LENGTH_SHORT);
-
-            toast.show();
-        // if login button was clicked
+        if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.INTERNET)
+                != PackageManager.PERMISSION_GRANTED) {
+            Toast.makeText(getApplicationContext(), "Internet permission not granted!", Toast.LENGTH_SHORT).show();
         } else {
-            Intent intent = new Intent(this, Login.class);
-            startActivity(intent);
+            // Permission has already been granted
+
+
+            // if map was clicked
+            if (Integer.parseInt(view.getTag().toString()) == 1) {
+                Toast.makeText(getApplicationContext(), "Map", Toast.LENGTH_SHORT).show();
+
+                // if cafeteria was clicked
+            } else if (Integer.parseInt(view.getTag().toString()) == 2) {
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Cafeteria",
+                        Toast.LENGTH_SHORT);
+
+                toast.show();
+                // if login button was clicked
+            } else {
+                Intent intent = new Intent(this, Login.class);
+                startActivity(intent);
+            }
         }
 
     }
-
-
-
 
     private void signIn() {
         Log.w(TAG,"google button pressed");
@@ -144,21 +151,6 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
         Log.w(TAG, "signout!");
         FirebaseAuth.getInstance().signOut();
-    }
-
-    public void goToMyAccount (View view){
-        Intent intent = new Intent (this, none_activity.class);
-        startActivity(intent);
-    }
-
-    public void goToPresence (View view){
-        Intent intent = new Intent (this, Presence.class);
-        startActivity(intent);
-    }
-
-    public void goToDirectory (View view){
-        Intent intent = new Intent (this, AuthenticatedHome.class);
-        startActivity(intent);
     }
 
 }
