@@ -9,15 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Directory"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity android:name=".Presence"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity android:name=".Authenticated_Home"
-            android:parentActivityName=".MainActivity">
-        </activity>
+        <activity android:name=".Login"></activity>
+        <activity
+            android:name=".Directory"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".Presence"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".Authenticated_Home"
+            android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
