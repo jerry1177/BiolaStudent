@@ -14,8 +14,13 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
+
     public void loginPressed(View view) {
         Intent intent = new Intent(this, AuthenticatedHome.class);
         startActivity(intent);
+    }
+
+    public void backButtonPressed(View view) {
+        finish();
     }
 }

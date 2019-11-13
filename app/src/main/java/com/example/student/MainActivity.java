@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
+    public static boolean signOut = false;
+    public static boolean signedIn = false;
+
     // [START declare_auth]
     private FirebaseAuth mAuth;
     // [END declare_auth]
