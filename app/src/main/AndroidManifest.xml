@@ -9,19 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity android:name=".Login"></activity>
-        <activity
-            android:name=".Directory"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity
-            android:name=".Presence"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity
-            android:name=".Authenticated_Home"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".MainActivity">
-=======
+
+        <activity android:name=".Login"
+            android:parentActivityName=".MainActivity">
+        </activity>
         <activity android:name=".none_activity"
             android:parentActivityName=".AuthenticatedHome">
         </activity>
@@ -32,7 +23,6 @@
             android:parentActivityName=".AuthenticatedHome">
         </activity>
         <activity android:name=".AuthenticatedHome">
->>>>>>> 17ebf84f857699d5e492e206b53735a58c585d3c
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
