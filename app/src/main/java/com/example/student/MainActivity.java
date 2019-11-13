@@ -72,11 +72,8 @@ public class MainActivity extends AppCompatActivity {
     public void buttonPressed(View view) {
         // if map was clicked
         if (Integer.parseInt(view.getTag().toString()) == 1) {
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    "Map",
-                    Toast.LENGTH_SHORT);
+            Toast.makeText(getApplicationContext(),"Map", Toast.LENGTH_SHORT).show();
 
-            toast.show();
         // if cafeteria was clicked
         } else if (Integer.parseInt(view.getTag().toString()) == 2) {
             Toast toast = Toast.makeText(getApplicationContext(),
@@ -148,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToMyAccount (View view){
-        Intent intent = new Intent (this, Authenticated_Home.class);
+        Intent intent = new Intent (this, none_activity.class);
         startActivity(intent);
     }
 
@@ -158,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToDirectory (View view){
-        Intent intent = new Intent (this, Directory.class);
+        Intent intent = new Intent (this, AuthenticatedHome.class);
         startActivity(intent);
     }
 
