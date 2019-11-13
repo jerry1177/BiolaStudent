@@ -7,54 +7,94 @@
     tools:context=".Login">
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/netid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="296dp"
         android:ems="10"
+        android:fontFamily="@font/rubik_light"
+        android:hint="@string/netid"
+        android:labelFor="@string/netid_label"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:text="@string/netid"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:autofillHints="@string/netid" />
+        app:layout_constraintVertical_bias="0.465"
+        android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="308dp"
         android:ems="10"
+        android:fontFamily="@font/rubik_light"
+        android:hint="@string/password"
+        android:labelFor="@string/password_label"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.989"
-        android:text="Password"
-        android:autofillHints="Password" />
+        app:layout_constraintVertical_bias="0.572"
+        android:textStyle="bold"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/LoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:layout_marginBottom="216dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/rubik_light"
         android:onClick="loginPressed"
-        android:text="Log In"
+        android:text="@string/log_in"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.689"
+        android:textStyle="bold"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/BackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FFC50725"
+        android:fontFamily="@font/rubik_light"
         android:onClick="backButtonPressed"
-        android:text="back"
+        android:text="@string/back_button"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/loginblurb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_light"
+        android:text="@string/login_blurb"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/BiolaLogo"
+        android:layout_width="114dp"
+        android:layout_height="93dp"
+        android:contentDescription="@string/biola_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.286"
+        app:srcCompat="@drawable/biolalogo_t" />
 </androidx.constraintlayout.widget.ConstraintLayout>

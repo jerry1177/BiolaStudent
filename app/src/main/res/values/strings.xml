@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">Student</string>
     <string name="netid">NetID</string>
+    <string name="netid_label">Enter Net ID</string>
+    <string name="back_button">back</string>
+    <string name="log_in">Log In</string>
+    <string name="login_blurb">One Account. Many Services.</string>
+    <string name="biola_logo">A picture dipicting the Biola University logo. An all red logo of a bible with fire coming from it.</string>
+    <string name="password">Password</string>
+    <string name="password_label">Enter Password</string>
+    <string name="main_text">All As One</string>
+    <string name="cafeteria">Cafeteria</string>
+    <string name="lim_center">Image of the outside front entrace of the Biola Lim Center for Science, Technology, and Health</string>
+    <string name="map">Map</string>
+    <string name="my_account">My Account</string>
+    <string name="presence">Presence</string>
+    <string name="directory">Directory</string>
+    <string name="canvas">Canvas</string>
+    <string name="sign_out">sign out</string>
 </resources>
