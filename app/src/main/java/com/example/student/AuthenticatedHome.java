@@ -31,26 +31,26 @@ public class AuthenticatedHome extends AppCompatActivity {
     public void linkPressed(View view) {
         switch (Integer.parseInt(view.getTag().toString())) {
             case 1:
-                goToWebPage("http://now.biola.edu/campus-maps/");
+                goToWebPage(getString(R.string.maplink));
                 break;
             case 2:
-                goToWebPage("https://cafebiola.cafebonappetit.com/cafe/cafe-biola/");
+                goToWebPage(getString(R.string.caflink));
                 break;
             case 3:
                 //Toast.makeText(getApplicationContext(),"My Account", Toast.LENGTH_SHORT).show();
-                goToWebPage("https://myaccount.biola.edu");
+                goToWebPage(getString(R.string.myaccount));
                 break;
             case 4:
                 //Toast.makeText(getApplicationContext(),"Presence", Toast.LENGTH_SHORT).show();
-                goToWebPage("https://biola.presence.io/");
+                goToWebPage(getString(R.string.presencelink));
                 break;
             case 5:
                 //Toast.makeText(getApplicationContext(),"Directory", Toast.LENGTH_SHORT).show();
-                goToWebPage("https://www.biola.edu/directory");
+                goToWebPage(getString(R.string.dirlink));
                 break;
             case 6:
                 //Toast.makeText(getApplicationContext(),"Canvas", Toast.LENGTH_SHORT).show();
-                goToWebPage("https://canvas.biola.edu/");
+                goToWebPage(getString(R.string.canvaslink));
                 break;
             case 7:
                 //Toast.makeText(getApplicationContext(),"Torrey", Toast.LENGTH_SHORT).show();

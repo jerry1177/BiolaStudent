@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             // if map was clicked
             if (Integer.parseInt(view.getTag().toString()) == 1) {
                 Intent intent = new Intent(this, WebActivity.class);
-                intent.putExtra("url", "http://now.biola.edu/campus-maps/");
+                intent.putExtra("url", getString(R.string.maplink));
                 startActivity(intent);
 
 
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             } else if (Integer.parseInt(view.getTag().toString()) == 2) {
 
                 Intent intent = new Intent(this, WebActivity.class);
-                intent.putExtra("url", "https://cafebiola.cafebonappetit.com/cafe/cafe-biola/");
+                intent.putExtra("url", getString(R.string.caflink));
                 startActivity(intent);
                 // if login button was clicked
             } else {
