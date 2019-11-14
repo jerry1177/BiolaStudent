@@ -37,19 +37,6 @@ public class AuthenticatedHome extends AppCompatActivity {
                 goToWebPage(getString(R.string.caflink));
                 break;
             case 3:
-<<<<<<< HEAD
-                goToWebPage("https://myaccount.biola.edu");
-                break;
-            case 4:
-                goToWebPage("https://biola.presence.io/");
-                break;
-            case 5:
-                goToWebPage("https://www.biola.edu/directory");
-                break;
-            case 6:
-                goToWebPage("https://canvas.biola.edu/");
-=======
-                //Toast.makeText(getApplicationContext(),"My Account", Toast.LENGTH_SHORT).show();
                 goToWebPage(getString(R.string.myaccount));
                 break;
             case 4:
@@ -63,7 +50,6 @@ public class AuthenticatedHome extends AppCompatActivity {
             case 6:
                 //Toast.makeText(getApplicationContext(),"Canvas", Toast.LENGTH_SHORT).show();
                 goToWebPage(getString(R.string.canvaslink));
->>>>>>> 4cd03b6f131bfa5060c4ed890550200636e44bc6
                 break;
             case 7:
                 //Toast.makeText(getApplicationContext(),"Torrey", Toast.LENGTH_SHORT).show();
