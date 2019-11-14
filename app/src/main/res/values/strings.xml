@@ -5,16 +5,24 @@
     <string name="back_button">back</string>
     <string name="log_in">Log In</string>
     <string name="login_blurb">One Account. Many Services.</string>
-    <string name="biola_logo">A picture dipicting the Biola University logo. An all red logo of a bible with fire coming from it.</string>
+    <string name="biola_logo">A picture depicting the Biola University logo. An all red logo of a bible with fire coming from it.</string>
     <string name="password">Password</string>
     <string name="password_label">Enter Password</string>
     <string name="main_text">All As One</string>
     <string name="cafeteria">Cafeteria</string>
-    <string name="lim_center">Image of the outside front entrace of the Biola Lim Center for Science, Technology, and Health</string>
+    <string name="lim_center">Image of the outside front entrance of the Biola Lim Center for Science, Technology, and Health</string>
     <string name="map">Map</string>
     <string name="my_account">My Account</string>
     <string name="presence">Presence</string>
     <string name="directory">Directory</string>
     <string name="canvas">Canvas</string>
     <string name="sign_out">sign out</string>
+
+    <!-- links -->
+    <string name="maplink">http://now.biola.edu/campus-maps/</string>
+    <string name="caflink">https://cafebiola.cafebonappetit.com/cafe/cafe-biola/</string>
+    <string name="myaccount">https://myaccount.biola.edu</string>
+    <string name="presencelink">https://biola.presence.io/</string>
+    <string name="dirlink">https://www.biola.edu/directory</string>
+    <string name="canvaslink">https://canvas.biola.edu/</string>
 </resources>
