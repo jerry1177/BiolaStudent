@@ -87,15 +87,17 @@ public class MainActivity extends AppCompatActivity {
 
             // if map was clicked
             if (Integer.parseInt(view.getTag().toString()) == 1) {
-                Toast.makeText(getApplicationContext(), "Map", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, WebActivity.class);
+                intent.putExtra("url", "http://now.biola.edu/campus-maps/");
+                startActivity(intent);
+
 
                 // if cafeteria was clicked
             } else if (Integer.parseInt(view.getTag().toString()) == 2) {
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Cafeteria",
-                        Toast.LENGTH_SHORT);
 
-                toast.show();
+                Intent intent = new Intent(this, WebActivity.class);
+                intent.putExtra("url", "https://cafebiola.cafebonappetit.com/cafe/cafe-biola/");
+                startActivity(intent);
                 // if login button was clicked
             } else {
                 Intent intent = new Intent(this, Login.class);
