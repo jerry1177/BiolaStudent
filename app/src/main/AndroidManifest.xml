@@ -11,14 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".WebActivity"></activity>
+        <activity android:name=".WebActivity"
+            android:parentActivityName=".AuthenticatedHome"></activity>
 
         <activity android:name=".Login"
             android:parentActivityName=".MainActivity">
         </activity>
 
-        <activity android:name=".AuthenticatedHome"
-            android:parentActivityName=".Login">
+        <activity android:name=".AuthenticatedHome">
         </activity>
 
         <activity android:name=".MainActivity">

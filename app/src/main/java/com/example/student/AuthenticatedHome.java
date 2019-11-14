@@ -37,19 +37,15 @@ public class AuthenticatedHome extends AppCompatActivity {
                 goToWebPage("https://cafebiola.cafebonappetit.com/cafe/cafe-biola/");
                 break;
             case 3:
-                //Toast.makeText(getApplicationContext(),"My Account", Toast.LENGTH_SHORT).show();
                 goToWebPage("https://myaccount.biola.edu");
                 break;
             case 4:
-                //Toast.makeText(getApplicationContext(),"Presence", Toast.LENGTH_SHORT).show();
                 goToWebPage("https://biola.presence.io/");
                 break;
             case 5:
-                //Toast.makeText(getApplicationContext(),"Directory", Toast.LENGTH_SHORT).show();
                 goToWebPage("https://www.biola.edu/directory");
                 break;
             case 6:
-                //Toast.makeText(getApplicationContext(),"Canvas", Toast.LENGTH_SHORT).show();
                 goToWebPage("https://canvas.biola.edu/");
                 break;
             case 7:
