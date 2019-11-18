@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class Login extends AppCompatActivity {
 
@@ -22,6 +23,13 @@ public class Login extends AppCompatActivity {
     public void loginPressed(View view) {
         Intent intent = new Intent(this, AuthenticatedHome.class);
         startActivity(intent);
+
+        // clear edittext
+        EditText netid = (EditText) findViewById(R.id.netid);
+        EditText password = (EditText) findViewById(R.id.password);
+
+        netid.setText("");
+        password.setText("");
     }
 
     public void backButtonPressed(View view) {

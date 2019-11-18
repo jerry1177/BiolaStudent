@@ -1,5 +1,6 @@
 package com.example.student;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -17,6 +18,8 @@ public class AuthenticatedHome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authenticated_home);
+        // hide actionbar
+        getSupportActionBar().hide();
         // set height and width of image view dynamically
         ImageView image = (ImageView) findViewById(R.id.imageView2);
         image.getLayoutParams().width = ViewGroup.LayoutParams.MATCH_PARENT;
