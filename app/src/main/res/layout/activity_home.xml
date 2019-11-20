@@ -21,7 +21,6 @@
 
         <Button
             android:id="@+id/textView1"
-            android:fontFamily="@font/rubik_light"
             android:layout_width="40dp"
             android:layout_height="139dp"
             android:layout_gravity="start"
@@ -31,13 +30,14 @@
             android:bottomLeftRadius="5dp"
             android:bottomRightRadius="5dp"
             android:elevation="5dp"
+            android:fontFamily="@font/rubik_light"
             android:onClick="buttonPressed"
             android:tag="1"
             android:text="@string/map"
             android:textColor="#FFFFFF"
+            android:textStyle="bold"
             android:topLeftRadius="5dp"
-            android:topRightRadius="5dp"
-            android:textStyle="bold" />
+            android:topRightRadius="5dp" />
 
         <Button
             android:id="@+id/textView2"
@@ -74,10 +74,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:fontFamily="@font/rubik_light"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:background="#000000"
+        android:fontFamily="@font/rubik_light"
         android:text="@string/main_text"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -85,8 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        android:textStyle="bold"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/button3"

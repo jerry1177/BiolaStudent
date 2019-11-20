@@ -1,16 +1,12 @@
 package com.example.student;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatTextView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Toolbar;
 
-import java.util.ArrayList;
+import android.widget.EditText;
 
 public class Login extends AppCompatActivity {
 
@@ -18,7 +14,6 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        ActionBar actionBar = getSupportActionBar();
 
     }
 
@@ -27,5 +22,12 @@ public class Login extends AppCompatActivity {
         // TODO: clear text box texts
         Intent intent = new Intent(this, AuthenticatedHome.class);
         startActivity(intent);
+
+        // clear edittext
+        EditText netid = (EditText) findViewById(R.id.netid);
+        EditText password = (EditText) findViewById(R.id.password);
+
+        netid.setText("");
+        password.setText("");
     }
 }

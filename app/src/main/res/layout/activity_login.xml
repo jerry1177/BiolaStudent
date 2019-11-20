@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/rubik_light"
         android:text="@string/login_blurb"
-        android:textColor="#00000000"
+        android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
