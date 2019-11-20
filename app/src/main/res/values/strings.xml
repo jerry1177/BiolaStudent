@@ -17,6 +17,8 @@
     <string name="directory">Directory</string>
     <string name="canvas">Canvas</string>
     <string name="sign_out">sign out</string>
+    <string name="wardrobe">Wardrobe</string>
+
 
     <!-- links -->
     <string name="maplink">http://now.biola.edu/campus-maps/</string>
@@ -25,4 +27,5 @@
     <string name="presencelink">https://biola.presence.io/</string>
     <string name="dirlink">https://www.biola.edu/directory</string>
     <string name="canvaslink">https://canvas.biola.edu/</string>
+    <string name="wardrobelink">https://sites.google.com/biola.edu/torreywardrobe/home?authuser=2</string>
 </resources>

@@ -25,12 +25,12 @@
         android:id="@+id/imageView2"
         android:layout_width="411dp"
         android:layout_height="197dp"
+        android:contentDescription="@string/lim_center"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lim_50"
-        android:contentDescription="@string/lim_center" />
+        app:srcCompat="@drawable/lim_50" />
 
     <TableLayout
         android:layout_width="409dp"
@@ -131,11 +131,25 @@
                 android:fontFamily="@font/rubik_light"
                 android:onClick="linkPressed"
                 android:tag="6"
+
                 android:text="@string/canvas"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </TableRow>
+
+        <Button
+            android:id="@+id/wardrobe"
+            android:layout_width="160dp"
+            android:layout_height="93dp"
+            android:backgroundTint="#FFC50725"
+            android:fontFamily="@font/rubik_light"
+            android:onClick="linkPressed"
+            android:tag="7"
+            android:text="@string/wardrobe"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
 
     </TableLayout>
@@ -144,11 +158,21 @@
         android:id="@+id/signOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:background="#00FFFFFF"
+        android:height="28dp"
+        android:background="#00000000"
+        android:backgroundTint="#000000"
         android:onClick="signOut"
         android:text="@string/sign_out"
+        android:textColor="#000000"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="wardrobeToggle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
