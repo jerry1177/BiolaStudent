@@ -38,9 +38,17 @@ public class AuthenticatedHome extends AppCompatActivity {
         height /= 3;
         image.getLayoutParams().height = height;
 
-        // set button invisible
+        // set wardrobe button height
         wardrobeButton = (Button)findViewById(R.id.wardrobe);
+        height = size.y;
+
+        height = (height*3)/20; // 15% of screen height
+        wardrobeButton.getLayoutParams().height = height;
+
+        // set button invisible
         wardrobeButton.setVisibility(View.GONE);
+
+
     }
 
     public void linkPressed(View view) {
@@ -112,9 +120,6 @@ public class AuthenticatedHome extends AppCompatActivity {
             height /= 4;
             image.getLayoutParams().height = height;
         }
-
-
-
 
     }
 
